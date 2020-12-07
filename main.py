@@ -11,7 +11,7 @@ from discord.ext import commands
 import os
 
 client = commands.Bot(command_prefix=".")
-#token = os.getenv("DISCORD_BOT_TOKEN")
+token = os.getenv('DISCORD_BOT_TOKEN')
 
 @client.event
 async def on_ready() :
@@ -30,5 +30,5 @@ async def materials(ctx, arg1: int, arg2: int):
     print("added mats");
 """
 
-client.run("Nzg1MzIwMjc3Mjk4MjQ5NzM4.X82IgA.5D5f4J7pvuX5w3JxUl6m0t3fw0g")
+client.run(token)
 
